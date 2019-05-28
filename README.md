@@ -1,21 +1,22 @@
-# Create React App example
+# Weather App React PWA
 
 ## How to use
 
-Download the example [or clone the repo](https://github.com/mui-org/material-ui):
+Download or clone this repo:
 
-```sh
-curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2 material-ui-master/examples/create-react-app
-cd create-react-app
+```
+git clone https://github.com/saimonazad/Weather-App-React-PWA.git
+cd directory
 ```
 
 Install it and run:
 
-```sh
+```
 npm install
 npm start
 ```
 
-## The idea behind the example
-
-This example demonstrates how you can use [Create React App](https://github.com/facebookincubator/create-react-app).
+## API used in this project
+1. http://ip-api.com/json/ -- for geo ip
+2. http://battuta.medunes.net/api/region/bd/all/?key=*********  -- for city/state list from geo ip
+3. http://api.openweathermap.org/data/2.5/weather?q=Dhaka&appid=********&units=metric ---- for current weather
