@@ -13,10 +13,10 @@ class SelectButton extends React.Component {
     super(props);
     
     // Don't do this!
-    fetch(`http://ip-api.com/json/`)
+    fetch(`https://ipapi.co/json/`)
       .then(response => response.json())
       .then(info => {
-        fetch(`http://battuta.medunes.net/api/region/${info.countryCode}/all/?key=4c7f8ec48d2ba0c78063e737b25ae5b4`)
+        fetch(`http://battuta.medunes.net/api/region/${info.country}/all/?key=4c7f8ec48d2ba0c78063e737b25ae5b4`)
           .then(response => response.json())
           .then(data => {
             data.map(key => (this.setState({ itemList: [...this.state.itemList, { value: key.region, label: key.region }] })))
